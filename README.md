@@ -1,0 +1,2 @@
+# Replastix-Innovations
+Salesforce CRM project for RePlastix Innovations to manage plastic waste, recycled products, orders, restock requests, and recycling centers. Includes custom objects, Apex automation, flows, dashboards, and role-based access to support sustainability operations.
