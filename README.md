@@ -1,112 +1,99 @@
-# Replastix-Innovations
+# ♻️ RePlastix Innovations: Transforming Plastic Waste into Sustainable Solutions
 
-👨‍🏭 RePlastix Innovations: Transforming Plastic Waste into Sustainable Solutions
-📘 Salesforce CRM Documentation
+## 📘 Salesforce CRM Documentation
 
-Salesforce CRM project for RePlastix Innovations to manage plastic waste, recycled products, orders, restock requests, and recycling centers. Includes custom objects, Apex automation, flows, dashboards, and role-based access to support sustainability operations.
+### 1. 📌 Project Overview
+RePlastix Innovations is a Salesforce CRM solution tailored to support a circular economy. It manages plastic waste collection, recycling, product distribution, and restock logistics. The system uses custom objects, flows, Apex classes, triggers, and scheduled logic to automate end-to-end operations.
 
-1. Project Overview
-RePlastix Innovations is a Salesforce CRM solution built to support a circular economy by managing plastic waste recycling and eco-product distribution. The system streamlines waste tracking, order processing, restock requests, and inventory control using custom objects, automation flows, Apex triggers, and scheduled logic.
+---
 
-2. Objectives
-Automate key processes such as restock generation and stock updates.
+### 2. 🎯 Objectives
+- Automate key processes such as restock generation and inventory tracking.  
+- Improve coordination across recycling centers, production teams, and order management.  
+- Enforce role-based access and validation to reduce human error.  
+- Provide real-time environmental and operational insights via reports and dashboards.
 
-Improve visibility and coordination between recycling centers and production teams.
+---
 
-Reduce manual errors with validation and role-based access.
+### 3. 📝 Phase 1: Requirement Analysis & Planning
+- Identified core entities: Plastic Waste, Recycled Products, Orders, Restock Requests, and Recycling Centers.  
+- Created custom objects:
+  - `Re_Plastic_Innovations_Plastic_Waste__c`  
+  - `Re_Plastic_Innovations_Recycled_Product__c`  
+  - `Re_Plastic_Innovations_Order__c`  
+  - `Re_Plastic_Innovations_Restock_Request__c`  
+  - `Re_Plastic_Innovations_Recycling_Center__c`  
+- Defined object relationships, business rules, field types, and automation needs.
 
-Provide real-time sustainability metrics and reporting.
+---
 
-3. Phase 1: Requirement Analysis & Planning
-Identified critical entities: plastic waste, products, orders, restocks, recycling centers.
+### 4. 🔧 Phase 2: Salesforce Development – Backend & Configurations
+- Built custom fields, validation rules, and relationships via Object Manager.  
+- Developed **Flows**:
+  - Auto Restock Trigger Flow  
+  - Inventory Stock Alert Flow  
+- Developed **Apex Classes**:
+  - `InventoryManager.cls`  
+  - `InventoryManagerTest.cls`  
+- Designed custom email alerts for inventory and order notifications.
 
-Created five key custom objects:
+---
 
-Re_Plastic_Innovations_Plastic_Waste__c
+### 5. 🖥️ Phase 3: UI/UX Development & Customization
+- Created a Lightning App: **Re Plastic Innovations**  
+- Added navigation tabs for all key custom objects.  
+- Designed Lightning Pages with dynamic forms and field visibility rules.  
+- Ensured intuitive layouts for each user role.
 
-Re_Plastic_Innovations_Recycled_Product__c
+---
 
-Re_Plastic_Innovations_Order__c
+### 6. 🔐 Phase 4: Data Migration, Testing & Security
+- Imported sample data using **Data Loader** and **Data Import Wizard**.  
+- Created user roles:
+  - `Plant Manager`  
+  - `Production Manager`  
+  - `Warehouse Supervisor`  
+- Applied permission sets, field-level security, and ACLs.
 
-Re_Plastic_Innovations_Restock_Request__c
+---
 
-Re_Plastic_Innovations_Recycling_Center__c
+### 7. ✅ Testing and Quality Assurance
+- Achieved over **85% test coverage** for Apex logic.  
+- Used **Flow Debug Logs** to validate automation.  
+- Manually tested Lightning UI across profiles.  
+- Verified stock levels and workflow executions post-trigger events.
 
-Defined relationships and field-level logic.
+---
 
-Outlined workflows and Apex needs for stock handling.
+### 8. 🚀 Phase 5: Deployment, Documentation & Maintenance
+- Deployed using **Change Sets** and **Salesforce CLI (SFDX)**.  
+- Maintained source control via Git and pushed metadata to GitHub.  
+- Included comprehensive documentation and test screenshots.
 
-4. Phase 2: Salesforce Development – Backend & Configurations
-Built custom objects and fields using Object Manager.
+📂 **Documentation File:** `RePlastix_Innovations_Salesforce_Project.pdf`
 
-Developed Flows:
+---
 
-Auto Restock Trigger Flow
+### 9. 🌟 Future Enhancements
+- 🔗 **IoT Integration** for smart bin-to-inventory tracking  
+- 📈 **Sustainability Dashboards** to report CO₂ offset and waste recycled  
+- 🧠 **AI Forecasting** for predicting restock needs  
+- 🌐 **Partner Portal** for recycling agencies and municipalities  
+- 📊 **Einstein Analytics** for ESG reporting and advanced metrics
 
-Inventory Alert Flow
+---
 
-Created Apex components:
+### 10. 🧾 Conclusion
+This Salesforce CRM solution for RePlastix Innovations demonstrates a scalable, automation-first approach to managing plastic recycling workflows. It enhances visibility, improves data integrity, and drives sustainability outcomes—laying the foundation for a smart, eco-friendly future.
 
-InventoryManager.cls
+---
 
-InventoryManagerTest.cls
+### 👨‍💻 Developer & Contact
 
-Designed email alerts for low stock and approvals.
+- **Name:** Sai Praneetha D  
+- **Email:** 224g1a3279@srit.ac.in  
+- **Role:** Salesforce Developer  
+- **Project Status:** ✅ Completed
 
-5. Phase 3: UI/UX Development & Customization
-Created a Lightning App: “Re Plastic Innovations”
+---
 
-Added custom tabs for key objects.
-
-Designed intuitive Lightning Pages and Layouts.
-
-Applied dynamic forms and validation prompts.
-
-6. Phase 4: Data Migration, Testing & Security
-Imported data using Data Loader and Data Import Wizard.
-
-Tested triggers and flows across roles.
-
-User Roles:
-
-Plant Manager
-
-Production Manager
-
-Warehouse Supervisor
-
-Assigned permission sets and enforced ACLs.
-
-7. Testing and Quality Assurance
-Achieved 85%+ Apex test coverage.
-
-Used Flow Debug Logs for flow validation.
-
-Tested role-specific UI/UX.
-
-Verified restock generation and inventory adjustment logic.
-
-8. Phase 5: Deployment, Documentation & Maintenance
-Deployed via Change Sets and Salesforce CLI.
-
-Maintained metadata in GitHub with version control.
-
-Included full project documentation, diagrams, and test proof.
-
-📂 Project Documentation: RePlastix_Innovations_Salesforce_Project.pdf
-
-9. Future Enhancements
-♻️ IoT Integration with smart recycling bins for real-time updates
-📦 Dynamic Routing Engine for optimized waste-to-product logistics
-📈 Sustainability Dashboards for CO₂ savings and recycling stats
-🌐 Partner Portal for municipalities and recycling agencies
-🤖 AI-powered forecasting for restock and demand trends
-
-10. Conclusion
-This CRM solution empowers RePlastix Innovations to automate and scale its plastic recycling operations efficiently. With Salesforce's flexible platform, the implementation supports sustainability, automation, and operational transparency—aligning technology with RePlastix’s environmental mission.
-
-👨‍💻 Developer & Contact
-Name: Sharanya Lakshmi S N
-Email: 224g1a3288@srit.ac.in
-Role: Salesforce Developer
-Project Status: ✅ Completed
