@@ -58,7 +58,7 @@ RePlastix Innovations is a Salesforce CRM solution tailored to support a circula
 ---
 
 ### 7. ✅ Testing and Quality Assurance
-- Achieved over **85% test coverage** for Apex logic.  
+- Achieved over **100% test coverage** for Apex logic.  
 - Used **Flow Debug Logs** to validate automation.  
 - Manually tested Lightning UI across profiles.  
 - Verified stock levels and workflow executions post-trigger events.
