@@ -90,8 +90,8 @@ This Salesforce CRM solution for RePlastix Innovations demonstrates a scalable, 
 
 ### 👨‍💻 Developer & Contact
 
-- **Name:** Sai Praneetha D  
-- **Email:** 224g1a3279@srit.ac.in  
+- **Name:** Sharanya Lakshmi S N
+- **Email:** 224g1a3288@srit.ac.in  
 - **Role:** Salesforce Developer  
 - **Project Status:** ✅ Completed
 
