@@ -1,0 +1,13 @@
+# Re Plastic Innovations - Salesforce Project
+
+## 📦 Objects Created in This Project
+
+1. **Re Plastic Innovations Order**
+2. **Re Plastic Innovations Plastic Waste**
+3. **Re Plastic Innovations Recycled Product**
+4. **Re Plastic Innovations Recycling Center**
+5. **Re Plastic Innovations Restock Request**
+
+---
+
+These custom objects are designed to support a sustainable workflow for managing plastic recycling, product generation, and inventory restocking within the Salesforce platform.
