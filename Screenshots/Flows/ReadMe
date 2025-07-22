@@ -1,0 +1,32 @@
+# 🔁 Stock Level is Low - Flow (Automation)
+
+This flow ensures that inventory is always monitored and replenished by automatically generating a **Restock Request** when a product’s **Stock_Level__c** drops below its **Threshold__c**.
+
+---
+
+## 🧠 Flow Overview
+
+- **Flow Name:** `Stock Level is Low`
+- **Flow Type:** Record-Triggered Flow
+- **Object:** `Re_Plastic_Innovations_Recycled_Product__c`
+- **Trigger Condition:** On record **update**
+- **Entry Condition:**
+  - `Stock_Level__c < Threshold__c`
+  - AND `Stock_Level__c` **is changed**
+- **Actions:**
+  - Create a new `Restock Request` record
+  - Status set to `"Pending"`
+
+---
+
+## 🛠️ Flow Setup Steps
+
+### 1. Go to Setup → Flows → New Flow
+- Choose **Record-Triggered Flow**
+- Object: `Re_Plastic_Innovations_Recycled_Product__c`
+- Trigger: When a record is **updated**
+- Entry Condition (Formula or Criteria):
+  ```plaintext
+  Stock_Level__c < Threshold__c
+  AND
+  ISCHANGED(Stock_Level__c)
