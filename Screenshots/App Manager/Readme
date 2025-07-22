@@ -1,0 +1,64 @@
+# 🚀 Re Plastic Innovations - Salesforce Lightning App Configuration
+
+This document describes how the custom objects in the **Re Plastic Innovations** project are integrated into a custom **Lightning App** using the Salesforce App Manager.
+
+---
+
+## 📦 App Overview
+
+- **App Name:** Re Plastic Innovations
+- **Developer Name:** Re_Plastic_Innovations
+- **App Type:** Lightning Experience
+- **Navigation Style:** Standard Navigation
+- **App Icon:** ♻️ (Optional custom branding)
+- **Primary Use Case:** To manage the lifecycle of plastic waste collection, recycling, product inventory, orders, and restock processes.
+
+---
+
+## 🧩 Included Tabs (Objects)
+
+| Tab Label           | Object API Name                                       | Purpose                                         |
+|---------------------|--------------------------------------------------------|-------------------------------------------------|
+| Plastic Waste        | `Re_Plastic_Innovations_Plastic_Waste__c`             | Track collected plastic waste and its details   |
+| Recycling Centers    | `Re_Plastic_Innovations_Recycling_Center__c`          | Manage recycling facility information           |
+| Recycled Products    | `Re_Plastic_Innovations_Recycled_Product__c`          | Monitor recycled products and stock levels      |
+| Orders               | `Re_Plastic_Innovations_Order__c`                     | Handle customer orders of recycled products     |
+| Restock Requests     | `Re_Plastic_Innovations_Restock_Request__c`           | Trigger inventory restocking workflows          |
+
+---
+
+## 👤 User Profiles & Permissions
+
+| Profile/Role        | Tabs Access                                      |
+|---------------------|--------------------------------------------------|
+| Recycling Center Ops| Plastic Waste, Recycling Centers                 |
+| Inventory Manager   | Recycled Products, Restock Requests              |
+| Sales Representative| Orders, Recycled Products                        |
+| System Admin        | Full access to all tabs and objects              |
+
+---
+
+## ⚙️ Setup Instructions (For Admins)
+
+1. Navigate to **Setup > App Manager** in Salesforce.
+2. Click **"New Lightning App"**.
+3. Configure:
+   - App Name: `Re Plastic Innovations`
+   - Developer Name: `Re_Plastic_Innovations`
+   - Select standard navigation.
+   - (Optional) Upload custom app icon or select a standard one (e.g., ♻️).
+4. **Add the following tabs** in the "Navigation Items" section:
+   - Plastic Waste
+   - Recycling Centers
+   - Recycled Products
+   - Orders
+   - Restock Requests
+5. Assign the app to relevant **profiles** and **permission sets**.
+6. Save and Activate the app.
+
+---
+
+## 📌 Summary
+
+The *Re Plastic Innovations* Lightning App centralizes operations for managing environmental sustainability initiatives within Salesforce. It allows role-based access to custom objects and automation through a user-friendly UI.
+
