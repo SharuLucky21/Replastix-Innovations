@@ -1,0 +1,68 @@
+# ♻️ Re Plastic Innovations - Salesforce Project
+
+## 📦 Custom Objects & Data Model
+
+---
+
+### 1. Re Plastic Innovations Plastic Waste (`Re_Plastic_Innovations_Plastic_Waste__c`)
+
+| Field API Name          | Data Type        | Description                                  |
+|-------------------------|------------------|----------------------------------------------|
+| Name                    | Text (Auto Number) | Unique ID for waste records                |
+| Weight__c               | Number (18,2)     | Weight of plastic waste (kg)                 |
+| Type__c                 | Picklist          | Type of plastic (PET, HDPE, PVC, etc.)       |
+| Collection_Date__c      | Date              | Date waste was collected                     |
+| Status__c               | Picklist          | Status: `Collected`, `Processing`, `Recycled`|
+| Recycling_Center__c     | Lookup            | Assigned recycling center (`Recycling_Center__c`) |
+| Location__c             | Geolocation       | Waste collection location                    |
+
+---
+
+### 2. Re Plastic Innovations Recycling Center (`Re_Plastic_Innovations_Recycling_Center__c`)
+
+| Field API Name      | Data Type      | Description                       |
+|---------------------|----------------|-----------------------------------|
+| Name                | Text           | Recycling Center Name             |
+| Location__c         | Geolocation    | Center’s location                 |
+| Capacity__c         | Number (18,2)  | Max capacity for processing waste|
+
+---
+
+### 3. Re Plastic Innovations Recycled Product (`Re_Plastic_Innovations_Recycled_Product__c`)
+
+| Field API Name     | Data Type   | Description                       |
+|--------------------|-------------|-----------------------------------|
+| Name               | Text        | Recycled product name             |
+| Stock_Level__c     | Number      | Current stock available           |
+| Threshold__c       | Number      | Minimum stock before restock is triggered |
+| Price__c           | Currency    | Price per unit                    |
+
+---
+
+### 4. Re Plastic Innovations Order (`Re_Plastic_Innovations_Order__c`)
+
+| Field API Name     | Data Type       | Description                         |
+|--------------------|------------------|-------------------------------------|
+| Name               | Auto Number     | Order ID                            |
+| Customer__c        | Lookup (Account)| Customer placing the order          |
+| Recycled_Product__c| Lookup          | Ordered product (`Recycled_Product__c`) |
+| Quantity__c        | Number          | Quantity ordered                    |
+| Delivery_Date__c   | Date            | Expected delivery date              |
+
+---
+
+### 5. Re Plastic Innovations Restock Request (`Re_Plastic_Innovations_Restock_Request__c`)
+
+| Field API Name         | Data Type   | Description                          |
+|------------------------|-------------|--------------------------------------|
+| Name                   | Auto Number | Request ID                           |
+| Product__c             | Lookup      | Product to restock (`Recycled_Product__c`) |
+| Requested_Quantity__c  | Number      | Quantity requested                   |
+| Status__c              | Picklist    | Status: `Pending`, `Approved`, `Completed` |
+
+---
+
+## 🗺️ Summary
+
+This project models a Salesforce environment for managing the lifecycle of plastic waste—from collection to recycling to product restocking. It includes five key custom objects that interact through lookups and picklists to create a robust, automated flow for plastic innovation initiatives.
+
