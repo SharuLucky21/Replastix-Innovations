@@ -1,0 +1,57 @@
+# 📑 Re Plastic Innovations - Custom Tabs Overview
+
+This document outlines the custom tabs created in Salesforce for managing the core objects of the **Re Plastic Innovations** project.
+
+Each tab provides a user interface for interacting with the underlying custom object data.
+
+---
+
+## 🧩 Tabs Created
+
+### 1. **Plastic Waste**
+- **Object:** `Re_Plastic_Innovations_Plastic_Waste__c`
+- **Type:** Custom Object Tab
+- **Purpose:** Manage records of collected plastic waste, including weight, type, location, and status.
+- **Visibility:** Available to users in Operations and Recycling roles.
+
+---
+
+### 2. **Recycling Centers**
+- **Object:** `Re_Plastic_Innovations_Recycling_Center__c`
+- **Type:** Custom Object Tab
+- **Purpose:** Track recycling center locations and their processing capacities.
+- **Visibility:** Admin and Management roles.
+
+---
+
+### 3. **Recycled Products**
+- **Object:** `Re_Plastic_Innovations_Recycled_Product__c`
+- **Type:** Custom Object Tab
+- **Purpose:** Maintain stock levels, price, and restock thresholds of recycled products.
+- **Visibility:** Inventory and Sales roles.
+
+---
+
+### 4. **Orders**
+- **Object:** `Re_Plastic_Innovations_Order__c`
+- **Type:** Custom Object Tab
+- **Purpose:** View and manage customer orders for recycled products.
+- **Visibility:** Sales team and fulfillment roles.
+
+---
+
+### 5. **Restock Requests**
+- **Object:** `Re_Plastic_Innovations_Restock_Request__c`
+- **Type:** Custom Object Tab
+- **Purpose:** Submit and track requests for replenishing recycled product stock.
+- **Visibility:** Automated triggers and Inventory users.
+
+---
+
+## 🗂️ Notes
+- All tabs were created using the **Custom Object Tabs** feature in Salesforce.
+- Tabs were added to a custom **Lightning App** called `Re Plastic Innovations`.
+- Profiles and permissions were configured to restrict or enable tab visibility based on user roles.
+
+---
+
