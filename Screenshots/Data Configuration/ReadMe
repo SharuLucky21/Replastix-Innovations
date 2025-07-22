@@ -1,0 +1,15 @@
+# 🧮 Formula Field & Validation Rule
+
+This document outlines the custom **Formula Field** and **Validation Rule** added to enhance data accuracy and automate stock monitoring in the **Re Plastic Innovations** Salesforce project.
+
+---
+
+## 🔢 Formula Field: `Stock Low` (`Stock_Low__c`)
+
+- **Object:** `Re_Plastic_Innovations_Recycled_Product__c`
+- **Field Type:** Checkbox (Formula)
+- **Purpose:** Automatically flags when the stock level of a recycled product drops below its threshold.
+
+### 📘 Formula Logic
+```plaintext
+Stock_Level__c < Threshold__c
